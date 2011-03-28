@@ -6,9 +6,10 @@ begin
     gemspec.name = "timezone_local"
     gemspec.summary = "Determine the local system's time zone"
     gemspec.description = ""
-    gemspec.email = "chetan@pixelcop.net"
+    gemspec.email = "chetan@evidon.com"
     gemspec.homepage = "http://github.com/chetan/timezone_local"
     gemspec.authors = ["Chetan Sarva"]
+    gemspec.add_dependency('tzinfo', '>= 0.3.24')
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
