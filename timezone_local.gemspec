@@ -11,12 +11,13 @@ Gem::Specification.new do |s|
   s.authors = ["Chetan Sarva"]
   s.date = %q{2011-03-28}
   s.description = %q{}
-  s.email = %q{chetan@pixelcop.net}
+  s.email = %q{chetan@evidon.com}
   s.files = [
     "Rakefile",
     "VERSION",
     "lib/timezone_local.rb",
-    "lib/unix.rb"
+    "lib/unix.rb",
+    "timezone_local.gemspec"
   ]
   s.homepage = %q{http://github.com/chetan/timezone_local}
   s.require_paths = ["lib"]
@@ -28,9 +29,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<tzinfo>, [">= 0.3.24"])
     else
+      s.add_dependency(%q<tzinfo>, [">= 0.3.24"])
     end
   else
+    s.add_dependency(%q<tzinfo>, [">= 0.3.24"])
   end
 end
 
