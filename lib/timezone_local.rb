@@ -15,10 +15,12 @@ module TimeZone
 
         def self.get
 
+            return @tz if not @tz.nil?
+
             self.METHODS.each do |m|
                 begin
-                    tz = self.send(m)
-                    return tz if not tz.nil?
+                    @tz = self.send(m)
+                    return @tz if not @tz.nil?
                 rescue Exception => ex
                 end
             end
