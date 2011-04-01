@@ -4,6 +4,8 @@ require 'tzinfo'
 module TimeZone
     module Local
 
+        @tz = nil
+
         # load the correct module depending on OS
         if /cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM then
             require File.join(File.dirname(__FILE__), 'windows')
