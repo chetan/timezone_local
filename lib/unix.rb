@@ -1,6 +1,6 @@
 
 require 'find'
-require 'ftools'
+require 'fileutils'
 
 module TimeZone::Local
     module Unix
