@@ -53,7 +53,7 @@ module TimeZone::Local
                 if File.file? path and
                    File.size(path) == size and
                    File.basename(path) != 'posixrules' and
-                   File.compare(file_to_match, path) then
+                   FileUtils.compare_file(file_to_match, path) then
 
                    match = path
                end
