@@ -37,7 +37,7 @@ module TimeZone::Local
         end
 
         def expand_symlink(f)
-            return nil if File.symlink?(f)
+            return nil if !File.symlink?(f)
             File.expand_path(File.readlink(f), File.dirname(File.expand_path(f)))
         end
 
