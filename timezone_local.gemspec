@@ -5,17 +5,19 @@
 
 Gem::Specification.new do |s|
   s.name = "timezone_local"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chetan Sarva"]
-  s.date = "2012-05-04"
+  s.date = "2012-05-30"
   s.description = ""
   s.email = "chetan@evidon.com"
   s.extra_rdoc_files = [
+    "LICENSE",
     "README.md"
   ]
   s.files = [
+    "LICENSE",
     "README.md",
     "Rakefile",
     "VERSION",
@@ -25,7 +27,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/chetan/timezone_local"
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.15"
+  s.rubygems_version = "1.8.24"
   s.summary = "Determine the local system's time zone"
 
   if s.respond_to? :specification_version then
